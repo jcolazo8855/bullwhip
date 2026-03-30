@@ -244,7 +244,7 @@ lb  = {
 st.markdown(
     """
     <h1 style='color:#E9C46A; font-family:Georgia; margin-bottom:0'>
-        📦 Bullwhip Effect Simulator
+        📦 TU BAT 3307 GSCM - Bullwhip Effect Simulator
     </h1>
     <p style='color:#94A3B8; margin-top:4px'>
         3-Echelon Supply Chain &nbsp;·&nbsp; Retailer → Wholesaler → Manufacturer
