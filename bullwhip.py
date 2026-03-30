@@ -19,7 +19,7 @@ from plotly.subplots import make_subplots
 
 # ── Page config ───────────────────────────────────────────────────────────────
 st.set_page_config(
-    page_title="Bullwhip Effect Simulator",
+    page_title="BAT 3307 Bullwhip Effect Simulator",
     page_icon="📦",
     layout="wide",
     initial_sidebar_state="expanded",
@@ -322,6 +322,12 @@ st.plotly_chart(fig1, use_container_width=True)
 
 col_a, col_b = st.columns(2)
 
+def hex_to_rgba(hex_color: str, alpha: float = 0.12) -> str:
+    """Convert '#RRGGBB' to 'rgba(r,g,b,alpha)'."""
+    h = hex_color.lstrip("#")
+    r, g, b = int(h[0:2], 16), int(h[2:4], 16), int(h[4:6], 16)
+    return f"rgba({r},{g},{b},{alpha})"
+
 with col_a:
     st.markdown("### 🏬 Inventory Levels")
     fig2 = go.Figure()
@@ -335,7 +341,7 @@ with col_a:
             mode="lines", name=name,
             line=dict(color=color, width=1.8),
             fill="tozeroy",
-            fillcolor=color.replace("#", "rgba(").rstrip(")") + ",0.08)",
+            fillcolor=hex_to_rgba(color, 0.12),
         ))
     fig2.update_layout(
         height=310,
