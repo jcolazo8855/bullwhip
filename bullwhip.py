@@ -19,7 +19,7 @@ from plotly.subplots import make_subplots
 
 # ── Page config ───────────────────────────────────────────────────────────────
 st.set_page_config(
-    page_title="BAT 3307 Bullwhip Effect Simulator",
+    page_title="TU BAT 3307 - Bullwhip Effect Simulator",
     page_icon="📦",
     layout="wide",
     initial_sidebar_state="expanded",
@@ -391,6 +391,7 @@ fig4 = make_subplots(
     rows=1, cols=2,
     column_widths=[0.65, 0.35],
     subplot_titles=["Period-by-Period Cost (Stacked)", "Cumulative Cost Share by Echelon"],
+    specs=[[{"type": "xy"}, {"type": "domain"}]],
 )
 
 # Stacked area cost over time
