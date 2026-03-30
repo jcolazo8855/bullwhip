@@ -619,7 +619,8 @@ st.markdown(
     """
     <div style='text-align:center; color:#64748B; font-size:12px'>
     Based on Lee, Padmanabhan & Whang (1997) · <em>The Bullwhip Effect in Supply Chains</em>, Sloan Management Review<br>
-    BAT 3307 Supply Management · Trinity University
+    All rights reserved (c) 2026 Dr. Jorge Colazo
+    BAT 3307 Supply Chain Management · Trinity University
     </div>
     """,
     unsafe_allow_html=True,
